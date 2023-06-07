@@ -1,44 +1,161 @@
 .section{
+    max-width: 1366px;
     margin: auto;
-    padding: 1rem;
+    height:100rem;
 
     display: flex;
     flex-direction: column;
-    background-color: rgb(249, 195, 231);
+    background-color: #fff;
 }
 
-.section h1 {
+.perfil{
+    margin: 3rem;
+}
+
+.fotoperfil{
+    background-color: #fff;
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    z-index: 0.5;
+
+    margin-left: 5rem;
+    margin-top: -2rem;
+
+    border-radius: 6rem;
+    -webkit-box-shadow: -1px 12px 27px -8px rgba(0,0,0,0.54);
+    -moz-box-shadow: -1px 12px 27px -8px rgba(0,0,0,0.54);
+    box-shadow: -1px 12px 27px -8px rgba(0,0,0,0.54);
+}
+
+.foto{
+    width: 12rem;
+    height: 12rem;
+
+}
+
+.portada{
+    height: 13rem;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+.caja1{
+    height: 10rem;
+    width: 100%;
+    background-color: aliceblue;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/*************************************/
+.info{
+    height: 23rem;
+    width: 80%;
+    background-color: #fff;
+}
+
+.name{
+    font-size: 3rem;
+    margin-top: 11rem;
+}
+
+.user{
+    font-size: 2rem;
+    color: #9F9F9F;
+}
+/****************************************/
+.iconos{
+    height: 23rem;
+    width: 25%;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+
+.mundo{
+    width: 5rem;
+    height: 5rem;
+
+    margin-right: 2rem;
+    margin-left: 8rem;
+    
+}
+
+.check{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+
+}
+
+.seguir{
+    width: 7rem;
+    height: 7rem;
+    margin-top: -1rem;
+}
+/************************/
+
+.secciones{
+    margin-top: 13rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    border-bottom: 2px solid black;
+}
+
+.posit{
+    width: 33.3%;
+    height: 4rem;
+}
+
+.useri{
+    width: 33.3%;
+    height: 4rem;
+}
+
+.photos{
+    width: 33.3%;
+    height: 4rem;
+}
+
+.text{
     text-align: center;
-    font-size: 5rem;
-    margin-top: 2rem;
+    color: #636363;
+    margin-top: 1rem;
 }
 
 /** SECCION DE LOS ITEMS */
 
-.root {
-    width: 100%;
-    margin-top: 5rem;
+/*.root {
+    width: 95%;
+    margin: 3rem;
     display: grid;
 
-    gap: 3rem;
-}
+    gap: 2rem;
+} */
 
 .post{
-    background-color: rgb(242, 234, 238);
-    border: 0.5rem solid black;
-    border-radius: 1rem;
+    margin-top: 2rem;
+    background-color: #D9D9D9;
+    border-radius: 0.5rem;
 }
 
 
 .titulo{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: black;
-    margin: 1rem;
+    padding: 2rem;
 
 }
 
 .cuerpo{
+    font-size: 1.8rem;
     color: black;
-    margin: 1rem;
-
+    padding: 0 2rem 2rem 2rem;
 }

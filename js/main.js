@@ -1,3 +1,7 @@
+
+
+//*********************************************************************** */
+
 let api_url = "https://jsonplaceholder.typicode.com/posts" ;
 
 async function post(api){
@@ -20,7 +24,7 @@ function objeto(dato){
 }
 
 function cargar_post(data){
-  let dom = document.querySelector(".root");
+  let dom = document.querySelector(".perfil");
   data.forEach(post => {
     let item = document.createElement("div");
     item.innerHTML = `
