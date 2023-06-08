@@ -12,26 +12,24 @@
     margin: 3rem;
 }
 
-.fotoperfil{
-    background-color: #fff;
-    width: 10%;
-    height: 20%;
-    position: absolute;
-    z-index: 0.5;
+.todo{
+    display: flex;
+    flex-direction: row;
+}
 
-    margin-left: 5rem;
+.caja{
+    width: 15rem;
+    width: 400%;
+    justify-content:space-around;
+    margin-left: 1rem;
     margin-top: -2rem;
 
-    border-radius: 6rem;
-    -webkit-box-shadow: -1px 12px 27px -8px rgba(0,0,0,0.54);
-    -moz-box-shadow: -1px 12px 27px -8px rgba(0,0,0,0.54);
-    box-shadow: -1px 12px 27px -8px rgba(0,0,0,0.54);
 }
 
 .foto{
-    width: 12rem;
-    height: 12rem;
-
+    width: 10rem;
+    height: 10rem;
+    justify-content:space-around;
 }
 
 .portada{
@@ -53,12 +51,13 @@
 .info{
     height: 23rem;
     width: 80%;
+    margin-left: -12rem;
     background-color: #fff;
 }
 
 .name{
     font-size: 3rem;
-    margin-top: 11rem;
+    margin-top: 2rem;
 }
 
 .user{
@@ -68,34 +67,35 @@
 /****************************************/
 .iconos{
     height: 23rem;
-    width: 25%;
+    width: 100%;
     background-color: #fff;
 
     display: flex;
     flex-direction: row;
     padding-top: 1rem;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .mundo{
-    width: 5rem;
-    height: 5rem;
-
-    margin-right: 2rem;
-    margin-left: 8rem;
-    
+    width: 2rem;
+    height: 2rem;
 }
 
 .check{
-    width: 5rem;
-    height: 5rem;
-    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
 
 }
 
 .seguir{
-    width: 7rem;
-    height: 7rem;
-    margin-top: -1rem;
+    background-color: black;
+    color: #fff;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    text-align: center;    
 }
 /************************/
 
