@@ -40,9 +40,10 @@ async function actualizarPerfil(user) {
       </div>
     </div>
   `;
-
   let perfil = document.querySelector(".perfil");
   perfil.innerHTML = codigo_perfil;
+
 }
 
+cargar_post();
 actualizarPerfil();
