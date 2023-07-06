@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+:root{
+    --color-gris: #E5E5E5;
+    --color-blanco:#FFFFFF;
+    --color-azul: #3D6697;
+    --color-negro:#000000;
+}
+
 html,
 body{
     font-size: 10px;
