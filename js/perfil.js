@@ -1,13 +1,12 @@
 let user_url = "https://jsonplaceholder.typicode.com/users";
+let post_api_url = "https://jsonplaceholder.typicode.com/posts";
 
 async function post(api) {
   let obtenerUser = await fetch(api);
   let users = await obtenerUser.json();
-  let user = users[1];
+  let user = users[3];
   actualizarPerfil(user);
 }
-
-post(user_url);
 
 async function actualizarPerfil(user) {
   let codigo_perfil = `
@@ -42,8 +41,32 @@ async function actualizarPerfil(user) {
   `;
   let perfil = document.querySelector(".perfil");
   perfil.innerHTML = codigo_perfil;
-
 }
 
-cargar_post();
-actualizarPerfil();
+async function cargar_post(data) {
+  let dom = document.querySelector(".perfil");
+  data.forEach(post => {
+    let item = document.createElement("div");
+    item.innerHTML = `
+      <div class="post">
+        <h2 class="titulo">${post.title}</h2>
+        <p class="cuerpo">${post.body}</p>
+      </div>
+    `;
+    dom.appendChild(item);
+  });
+}
+
+async function fetchDataAndLoadPosts() {
+  try {
+    let obtenerPost = await fetch(post_api_url);
+    let posts = await obtenerPost.json();
+    objeto(posts);
+    cargar_post(posts);
+  } catch (error) {
+    console.error("Error fetching posts:", error);
+  }
+}
+
+post(user_url);
+fetchDataAndLoadPosts();
